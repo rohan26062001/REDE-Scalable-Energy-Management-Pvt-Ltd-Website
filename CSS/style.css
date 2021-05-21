@@ -1,0 +1,91 @@
+/* Smooth Scrolling */
+html{
+  scroll-behavior: smooth;
+}
+
+/* Scroll To Top Button */
+
+#btnScrollToTop{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #E91E63;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#btnScrollToTop:active{
+  background-color: red;
+}
+
+/* Navbar */
+#nav{
+  text-transform: uppercase;
+  letter-spacing: 0.1ex;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+  color: #E91E63;
+}
+
+/* Experience-Section */
+.container-edit{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.container-edit .card-edit{
+  position: relative;
+  width: 240px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.container-edit .card-edit .content-edit{
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100px);
+  transition: 0.5s;
+}
+
+.container-edit .card-edit:hover .content-edit{
+  transform: translateY(0px);
+}
+
+.container-edit .card-edit .content-edit h2{
+  top: -80px;
+  right: 30px;
+  font-size: 8em;
+  pointer-events: none;
+}
+
+.container-edit .card-edit .content-edit h3{
+  font-size: 1.8em;
+  z-index: 1;
+}
+
+.container-edit .card-edit .content-edit p{
+  font-size: 1em;
+  font-weight: 300;
+}

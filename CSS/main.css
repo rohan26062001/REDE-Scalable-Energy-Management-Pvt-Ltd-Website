@@ -1,0 +1,30 @@
+.dark {
+  text-align: left;
+  background: wheat;
+  color: black;
+  position: relative;
+}
+
+/* .gsap {
+  position: absolute;
+  object-fit: cover;
+  right: 0;
+  top: 0;
+  z-index: 0;
+} */
+
+.content {
+  padding: 9em 5em;
+  z-index: 1;
+  position: relative;
+}
+
+.content h2 {
+  font-size: 5em;
+  margin-bottom: 0;
+}
+
+.content .row .col-12 p {
+  font-size: 1.6em;
+}
+/*# sourceMappingURL=main.css.map */
