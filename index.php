@@ -58,7 +58,7 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">Our Products</a>
+                    <a class="nav-link" href="our-products.html">Our Products</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#skills">Services</a>
@@ -69,15 +69,15 @@
                         Login/Sign-up
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/">Login</a>
-                        <a class="dropdown-item" href="/">Sign Up</a>
+                        <a class="dropdown-item" href="PHP/login.php">Login</a>
+                        <a class="dropdown-item" href="PHP/signup.php">Sign Up</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#exp">About Us</a>
+                    <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#project">Contact Us</a>
+                    <a class="nav-link" href="contact-us.php">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -123,24 +123,31 @@
         <div class="container">
             <div class="row d-flex justify-content-center flex-wrap">
                 <div class="col-12 col-md-3">
-                    <img class="mx-auto d-block" src="images/industry/p&e.jpg" alt="power and energy" style="border-radius: 100%; width: 200px; height: 200px;">
+                    <img class="mx-auto d-block" src="images/industry/p&e.jpg" alt="power and energy"
+                        style="border-radius: 100%; width: 200px; height: 200px;">
                     <h6 style="text-align: center;">Power and Energy Industry</h6>
-                    <p style="text-align: center;">In this domain we have many products like energy managment, load shedding, energy monitoring and analysis, power factor control system.</p>
+                    <p style="text-align: center;">In this domain we have many products like energy managment, load
+                        shedding, energy monitoring and analysis, power factor control system.</p>
                 </div>
                 <div class="col-12 col-md-3">
-                    <img class="mx-auto d-block" src="images/industry/steel.jpg" alt="steel" style="border-radius: 100%; width: 200px; height: 200px;">
+                    <img class="mx-auto d-block" src="images/industry/steel.jpg" alt="steel"
+                        style="border-radius: 100%; width: 200px; height: 200px;">
                     <h6 style="text-align: center;">Steel Industry</h6>
                     <p style="text-align: center;">We have many applications for furnace monitoring and control.</p>
                 </div>
                 <div class="col-12 col-md-3">
-                    <img class="mx-auto d-block" src="images/industry/mining.jpg" alt="steel" style="border-radius: 100%; width: 200px; height: 200px;">
+                    <img class="mx-auto d-block" src="images/industry/mining.jpg" alt="steel"
+                        style="border-radius: 100%; width: 200px; height: 200px;">
                     <h6 style="text-align: center;">Mining Industry</h6>
-                    <p style="text-align: center;">In Mining, our product includes vehical monitoring, RFID, Gate Control System etc.</p>
+                    <p style="text-align: center;">In Mining, our product includes vehical monitoring, RFID, Gate
+                        Control System etc.</p>
                 </div>
                 <div class="col-12 col-md-3">
-                    <img class="mx-auto d-block" src="images/industry/cement.jpg" alt="steel" style="border-radius: 100%; width: 200px; height: 200px;">
+                    <img class="mx-auto d-block" src="images/industry/cement.jpg" alt="steel"
+                        style="border-radius: 100%; width: 200px; height: 200px;">
                     <h6 style="text-align: center;">Cement Industry</h6>
-                    <p style="text-align: center;">In cement industries our expertise mainly on industrial automation and data acquisition.</p>
+                    <p style="text-align: center;">In cement industries our expertise mainly on industrial automation
+                        and data acquisition.</p>
                 </div>
             </div>
         </div>
@@ -149,7 +156,8 @@
 
     <!-- Experiecne Section Start -->
     <section class="experience bg-light py-5">
-        <h1 class="py-5" style="font-weight: bolder; text-align: center;">More than <span style="color: #E91E63;">14 YEARS</span> of Experience</h1>
+        <h1 class="py-5" style="font-weight: bolder; text-align: center;">More than <span style="color: #E91E63;">14
+                YEARS</span> of Experience</h1>
         <div class="container-edit">
             <div class="card-edit">
                 <div class="content-edit">
@@ -287,7 +295,7 @@
                             Useful links
                         </h6>
                         <p>
-                            <a href="/" class="text-reset">Product</a>
+                            <a href="our-products.html" class="text-reset">Product</a>
                         </p>
                         <p>
                             <a href="/" class="text-reset">Service</a>
