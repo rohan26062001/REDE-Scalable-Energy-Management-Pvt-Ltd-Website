@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/Rede-Logo.jpg" type="image/x-icon">
-    <title>REDE Scalable Energy Management Pvt. Ltd.</title>
+    <link rel="icon" href="images/Rede-Logo.jpg" type="image/x-icon">
+    <title>About Us | REDE Scalable Energy Management Pvt. Ltd.</title>
 
     <!-- Font Style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,20 +29,20 @@
 </head>
 
 <style>
+    .quote {
+        margin: 0;
+        background: #eee;
+        padding: 1em;
+        border-radius: 1em;
+    }
+
+    .quote figcaption,
+    .quote blockquote {
+        margin: 1em;
+    }
 </style>
 
-<body onload="myFunction()">
-    <!-- Preloader Start -->
-    <div id="loading"></div>
-    <!-- Preloader End -->
-
-    <!-- Scroll To Top Button -->
-    <button id="btnScrollToTop">
-        <i class="material-icons">arrow_upward</i>
-    </button>
-    <!-- Scroll To Top Button End -->
-
-
+<body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-md navbar-light bg-light font-weight-bold" id="nav">
         <a href="#" class="navbar-brand">
@@ -61,28 +62,67 @@
                     <a class="nav-link" href="our-products.html">Our Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Services</a>
+                    <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Login/Sign-up
+                        Login
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="PHP/login.php">Login</a>
-                        <a class="dropdown-item" href="PHP/signup.php">Sign Up</a>
+                        <a class="dropdown-item" href="PHP/login.php">Employee Login</a>
+                        <a class="dropdown-item" href="PHP/customer-login.php">Customer Login</a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#project">Contact Us</a>
+                    <a class="nav-link" href="contact-us.php">Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- Navbar End -->
+
+    <!-- About Section Start -->
+    <section id="about">
+        <div class="container my-4">
+            <div class="row my-3">
+                <div class="col-12">
+                    <h2 style="color: #E91E63;">Company Overview</h2>
+                    <p>
+                        We, The REDE Scalable is an Engineering Company Offering Solutions for Industrial Protocol
+                        Development, Application Programming Interface and Software Platforms for Data Acquisition, Data
+                        Analysis and Data Monitoring for Numerous Industrial Applications. With over Decade of
+                        Experience in Engineering, Product Development and Domain Experience in Industrial Automation,
+                        we have been Helping Industry To Implement Concepts With Workable Solutions For Efficiency
+                        Improvement, Application Monitoring And Effective Control The Processes, Systems And Machines.
+                    </p>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-12 col-md-6">
+                    <h2 style="color: #E91E63;">Benefits of REDE</h2>
+                    <p>REDE always Address Individual requirement such a way exceed business partner’s expectations with
+                        effective solution and continuously Improve upon Products, Systems, Quality and Processes. Our
+                        Nation Wide Sales and Support Channels help to prompt and Swift support to our Business
+                        Partners. As an Organisation, we are committed all the stack holders in our Business and Society
+                        as a whole.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <figure class="quote">
+                        <blockquote>
+                            A great culture starts with a vision or mission statement. These simple turns of phrase guide a company’s values and provide it with purpose. That purpose, in turn, orients every decision employees make. When they are deeply authentic and prominently displayed, good vision statements can even help orient customers, suppliers, and other stakeholders.
+                        </blockquote>
+                        <figcaption>
+                            &mdash; Pritam Sinha, <cite>CEO, Rede Scalable Ltd.</cite> </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
@@ -96,16 +136,7 @@
 
             <!-- Right -->
             <div style="letter-spacing: 1em;">
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
+                <a href="https://www.linkedin.com/in/redescalable-india-60323a164/" class="me-4 text-reset">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
@@ -138,10 +169,10 @@
                             <a href="our-products.html" class="text-reset">Product</a>
                         </p>
                         <p>
-                            <a href="/" class="text-reset">Service</a>
+                            <a href="services.html" class="text-reset">Service</a>
                         </p>
                         <p>
-                            <a href="/" class="text-reset">Contact Us</a>
+                            <a href="contact-us.php" class="text-reset">Contact Us</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -165,9 +196,9 @@
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            Registered Office
+                            PUNE Office
                         </h6>
-                        <p><i class="fas fa-home me-3"></i> Post-Chalkpara, Liluah, Howrah-711204</p>
+                        <p><i class="fas fa-home me-3"></i> Office No. 140, Bizzbay mall, Opp. SBI Bank, NIBM-Undri Road, Kondhwa, Pune – 411048</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
                             <a href="mailto:sales@redescalable.com">sales@redescalable.com</a>

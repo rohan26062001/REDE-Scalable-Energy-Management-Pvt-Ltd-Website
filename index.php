@@ -55,22 +55,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="our-products.html">Our Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Services</a>
+                    <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Login/Sign-up
+                        Login
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="PHP/login.php">Login</a>
-                        <a class="dropdown-item" href="PHP/signup.php">Sign Up</a>
+                        <a class="dropdown-item" href="PHP/login.php">Employee Login</a>
+                        <a class="dropdown-item" href="PHP/customer-login.php">Customer Login</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -90,17 +90,34 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <a href="google.com">
-                    <img class="d-block w-100" src="images/projects/services.jpg">
+                <a href="services.html">
+                    <img class="d-block w-100" src="images/banner/services.jpg">
+                </a>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="images/projects/REDE-SMART-GRID.jpg">
+                <a href="products/protocol-analyzer.html">
+                    <img class="d-block w-100" src="images/banner/protocol-analyzer.jpg">
+                </a>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="images/projects/protocol-analyzer.jpg">
+                <a href="products/FRTU.html">
+                    <img class="d-block w-100" src="images/banner/frtu.jpg">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="products/RTU.html">
+                    <img class="d-block w-100" src="images/banner/rtu.jpg">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="products/scada.html">
+                    <img class="d-block w-100" src="images/banner/scada.jpg">
+                </a>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -256,16 +273,7 @@
 
             <!-- Right -->
             <div style="letter-spacing: 1em;">
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
+                <a href="https://www.linkedin.com/in/redescalable-india-60323a164/" class="me-4 text-reset">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
@@ -298,10 +306,10 @@
                             <a href="our-products.html" class="text-reset">Product</a>
                         </p>
                         <p>
-                            <a href="/" class="text-reset">Service</a>
+                            <a href="services.html" class="text-reset">Service</a>
                         </p>
                         <p>
-                            <a href="/" class="text-reset">Contact Us</a>
+                            <a href="contact-us.php" class="text-reset">Contact Us</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -325,9 +333,9 @@
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            Registered Office
+                            PUNE Office
                         </h6>
-                        <p><i class="fas fa-home me-3"></i> Post-Chalkpara, Liluah, Howrah-711204</p>
+                        <p><i class="fas fa-home me-3"></i> Office No. 140, Bizzbay mall, Opp. SBI Bank, NIBM-Undri Road, Kondhwa, Pune – 411048</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
                             <a href="mailto:sales@redescalable.com">sales@redescalable.com</a>

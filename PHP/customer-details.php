@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/Rede-Logo.jpg" type="image/x-icon">
-    <title>Contact Us Form Data | REDE Scalable Energy Management Pvt. Ltd.</title>
+    <title>Customer Details | REDE Scalable Energy Management Pvt. Ltd.</title>
 
     <!-- Font Style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -76,12 +76,12 @@
     <!-- Enquiry Section Start -->
     <section class="enquiry">
         <div class="container my-5">
-            <h1 class="text-center"><span style="color: #E91E63;">Queries</span></h1>
+            <h1 class="text-center"><span style="color: #E91E63;">Employee</span> Details</h1>
             <?php
 
             include("connection.php");
 
-            $query = "select * from query";
+            $query = "select * from customer_list";
             $data = mysqli_query($con, $query);
 
             $total = mysqli_num_rows($data);
@@ -91,12 +91,11 @@
                 <table style="width:600px; text-align:center; line-height:40px; width: 100%" class="table-bordered">
                     <thead>
                         <tr>
-                            <th>Query ID</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Phone</th>
-                            <th>Time & Date</th>
-                            <th>Message</th>
+                            <th>Account Creation Date</th>
+                            <th>Password</th>
+                            <th>Viewed Products</th>
                         </tr>
                     </thead>
 
@@ -104,12 +103,11 @@
                     while ($rows = mysqli_fetch_assoc($data)) {
                     ?>
                         <tr>
-                            <td><?php echo $rows['id']; ?></td>
                             <td><?php echo $rows['name']; ?></td>
                             <td><?php echo $rows['email']; ?></td>
-                            <td><?php echo $rows['phone']; ?></td>
-                            <td><?php echo $rows['time']; ?></td>
-                            <td><?php echo $rows['message']; ?></td>
+                            <td><?php echo $rows['user_creation_date']; ?></td>
+                            <td><?php echo $rows['password']; ?></td>
+                            <td><?php echo $rows['viewed_products']; ?></td>
                         </tr>
                     <?php
                     }
@@ -117,7 +115,7 @@
                 </table>
             <?php
             } else {
-                echo "No Query";
+                echo "No transaction history";
             }
             ?>
         </div>

@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/Rede-Logo.jpg" type="image/x-icon">
-    <title>Employee Sign Up | REDE Scalable Energy Management Pvt. Ltd.</title>
+    <title>Customer Sign Up | REDE Scalable Energy Management Pvt. Ltd.</title>
 
     <!-- Font Style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -86,23 +82,21 @@
                 <img src="../images/signup.png" style="border-radius: 16px; width: 100%;" alt="signup">
             </div>
             <div class="col-12 col-md-5 my-auto">
-                <h2 class="text-center"><span style="color: #E91E63;">Employee Sign Up</span> Form</h2>
+                <h2 class="text-center"><span style="color: #E91E63;">Customer Sign Up</span> Form</h2>
                 <form action="" method="POST">
-                    <label for="fname">First Name</label><br>
-                    <input type="text" name="firstName" id="fname" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
-                    <label for="lname">Last Name</label><br>
-                    <input type="text" name="lastName" id="lname" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
-                    <label for="emp_id">Employee Id:</label><br>
-                    <input type="text" name="id" id="emp_id" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" id="name" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
                     <label for="email">Email:</label><br>
                     <input type="email" name="email" id="email" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
+                    <label for="date">User Creation Date:</label><br>
+                    <input type="date" name="date" id="date" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
                     <label for="password">Password:</label><br>
-                    <input type="password" name="password" id="password" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required>
+                    <input type="password" name="password" id="name" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
                     <br><br>
 
                     <button class="btn btn-primary w-100" name="signup">Sign Up</button><br><br>
                 </form>
-                <p class="text-center">Already have an account? <span><a href="login.php">Log In!</a></span></p>
+                <p class="text-center">Already have an account? <span><a href="customer-login.php">Log In!</a></span></p>
             </div>
         </div>
     </div>
@@ -131,13 +125,13 @@ include("connection.php");
 
 if (isset($_POST['signup'])) {
 
-    $firstname = $_POST['firstName'];
-    $lastname = $_POST['lastName'];
-    $id = $_POST['id'];
+    $name = $_POST['name'];
     $email = $_POST['email'];
+    $date = $_POST['date'];
     $password = $_POST['password'];
+    $view = '';
 
-    $query = "SELECT * FROM `user_list` WHERE email='$email'";
+    $query = "SELECT * FROM `customer_list` WHERE email='$email'";
 
     $result = mysqli_query($con, $query);
 
@@ -150,7 +144,7 @@ if (isset($_POST['signup'])) {
         </script>
         <?php
     } else {
-        $sql = "INSERT INTO `user_list`(`firstName`, `lastName`, `employeeID`, `email`, `password`) VALUES ('$firstname','$lastname','$id','$email','$password')";
+        $sql = "INSERT INTO `customer_list`(`name`, `email`, `user_creation_date`, `password`, `viewed_products`) VALUES ('$name','$email','$date','$password','$view')";
 
         $result = mysqli_query($con, $sql);
 
@@ -158,7 +152,7 @@ if (isset($_POST['signup'])) {
         ?>
             <script>
                 alert("Successfully Signed Up");
-                window.location.href = "login.php";
+                window.location.href = "customer-login.php";
             </script>
         <?php
             exit();

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/Rede-Logo.jpg" type="image/x-icon">
-    <title>Contact Us | REDE Scalable Energy Management Pvt. Ltd.</title>
+    <title>Services | REDE Scalable Energy Management Pvt. Ltd.</title>
 
     <!-- Font Style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,18 +30,7 @@
 <style>
 </style>
 
-<body onload="myFunction()">
-    <!-- Preloader Start -->
-    <div id="loading"></div>
-    <!-- Preloader End -->
-
-    <!-- Scroll To Top Button -->
-    <button id="btnScrollToTop">
-        <i class="material-icons">arrow_upward</i>
-    </button>
-    <!-- Scroll To Top Button End -->
-
-
+<body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-md navbar-light bg-light font-weight-bold" id="nav">
         <a href="#" class="navbar-brand">
@@ -84,26 +73,56 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Contact Form Starts -->
-    <section class="contact">
-        <div class="container my-5 bg-light py-5" style="border-radius: 16px;">
-            <h2 class="text-center"><span style="color: #E91E63;">Contact</span> Us</h2>
-                <form action="" method="POST">
-                    <label for="name">Full Name</label><br>
-                    <input type="text" name="name" id="name" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" name="email" id="email" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
-                    <label for="phone">Phone Number:</label><br>
-                    <input type="number" name="phone" id="phone" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
-                    <label for="message">Message:</label><br>
-                    <input type="text" name="message" id="message" style="width: 100%; height: 100px; border-color:#E91E63; border-radius: 15px;" required>
-                    <br><br>
-
-                    <button class="btn btn-primary w-100" name="send">Send Message</button><br><br>
-                </form>
+    <!-- Background Image Start -->
+    <section id="bg">
+        <div class="bg">
+            <img style="width: 100%;" src="images/services.png" alt="">
         </div>
     </section>
-    <!-- Contact Form End -->
+    <!-- Background Image End -->
+
+    <!-- Services Section Start -->
+    <section id="services">
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-12">
+                    <h2 style="color: #E91E63;">Rede Protocol Consultancy & Industrial API Development Solution</h2>
+                    <p>A various participation in big and small projects of control & automation of power system engineering has allowed REDE SCALABLE ENERGY & MANAGEMENT to consolidate the knowledge in the handling of critical applications across the smart grid solutions, wide area monitoring, power plant optimization and development of energy efficiency technologies.
+
+                    We are a certified solution partner of Advantech and also collaborate with the leading distribution and power energy sectors to provide flexible, scalable and secure technology driven solutions.</p>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-12 col-md-6">
+                    <h3 style="color: #E91E63;">Protocol Consultancy</h3>
+                    <ul>
+                        <li>Turnkey Protocol Implementation, Validation and Life Cycle Support.</li>
+                        <li>API Requrementsfor Customer Systems and Architechture.</li>
+                        <li>Freezing Product Communication Interface Requirements.</li>
+                        <li>Designing Of Specific Interfaces Based On The Current H/W and S/W Setup.</li>
+                        <li>Protocol Implementation Design Document (PID).</li>
+                        <li>Testing and Certification.</li>
+                        <li>Protocol Integration Validation.</li>
+                        <li>Functional and Performance Validation.</li>
+                        <li>Interoperability Conformance Testing.</li>
+                        <li>Knowledge Transfer And Training.</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3 style="color: #E91E63;">Industrial API Development</h3>
+                    <ul>
+                        <li>Understand the requirement and prepare set subroutine definitions, protocols, and tools for building application architecture.</li>
+                        <li>POSIX, Windows API, ASPI.</li>
+                        <li>Remote API Development.</li>
+                        <li>Communicate between different libraries and frame works.</li>
+                        <li>Testing and Certification.</li>
+                        <li>Knowledge Transfer and Training.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
@@ -215,61 +234,6 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-    <!-- vanilla-tilt.js -->
-    <script type="text/javascript" src="JS/vanilla-tilt.min.js"></script>
-    <!-- observer.js -->
-    <script src="JS/observer.js"></script>
-    <script>
-        var preloader = document.getElementById("loading");
-
-        function myFunction() {
-            preloader.style.display = 'none';
-        };
-
-        const btnScrollToTop = document.querySelector("#btnScrollToTop");
-
-        btnScrollToTop.addEventListener('click', function () {
-            window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: "smooth"
-            });
-        });
-    </script>
 </body>
 
 </html>
-
-<?php
-include("PHP/connection.php");
-
-if (isset($_POST['send'])) {
-
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    date_default_timezone_set('Asia/Kolkata');
-    $date = date('d-m-y h:i:s');
-    $message = $_POST['message'];
-    $sql = "INSERT INTO `query`(`name`, `email`, `phone`, `time`, `message`) VALUES ('$name','$email','$phone','$date','$message')";
-    $result = mysqli_query($con, $sql);
-
-    if ($result) {
-    ?>
-        <script>
-            alert("Message Sent Successfully");
-            window.location.href = "index.php";
-        </script>
-    <?php
-        exit();
-    } 
-    else {
-    ?>
-        <script>
-            alert("Failed to Send Message");
-        </script>
-<?php
-        exit();
-        }
-    }
-?>

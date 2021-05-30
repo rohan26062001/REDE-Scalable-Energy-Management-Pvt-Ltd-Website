@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/Rede-Logo.jpg" type="image/x-icon">
-    <title>REDE Scalable Energy Management Pvt. Ltd.</title>
+    <link rel="icon" href="../images/Rede-Logo.jpg" type="image/x-icon">
+    <title>Employee Page | REDE Scalable Energy Management Pvt. Ltd.</title>
 
     <!-- Font Style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">

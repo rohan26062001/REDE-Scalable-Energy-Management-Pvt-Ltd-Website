@@ -1,3 +1,8 @@
+<?php
+session_start();
+include("connection.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +10,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/Rede-Logo.jpg" type="image/x-icon">
-    <title>Enquiry | REDE Scalable Energy Management Pvt. Ltd.</title>
+    <title>Customer Login | REDE Scalable Energy Management Pvt. Ltd.</title>
 
     <!-- Font Style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,56 +28,18 @@
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="../CSS/main.css" />
-    <link rel="stylesheet" href="../CSS/partners.css">
 </head>
 
 <style>
-    .styled-table {
-        border-collapse: collapse;
-        margin: 25px 0;
-        font-size: 0.9em;
-        font-family: sans-serif;
-        min-width: 400px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .styled-table thead tr {
-        background-color: #E91E63;
-        color: #ffffff;
-        text-align: left;
-    }
-
-    .styled-table th,
-    .styled-table td {
-        padding: 12px 15px;
-    }
-
-    .styled-table tbody tr {
-        border-bottom: 1px solid #dddddd;
-    }
-
-    .styled-table tbody tr:nth-of-type(even) {
-        background-color: #f3f3f3;
-    }
-
-    .styled-table tbody tr:last-of-type {
-        border-bottom: 2px solid #E91E63;
-    }
-
-    .styled-table tbody tr.active-row {
-        font-weight: bold;
-        color: #E91E63;
+    .container {
+        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+            0 0 0 2px rgb(255, 255, 255),
+            0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        ;
     }
 </style>
 
 <body>
-    <!-- Scroll To Top Button -->
-    <button id="btnScrollToTop">
-        <i class="material-icons">arrow_upward</i>
-    </button>
-    <!-- Scroll To Top Button End -->
-
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-md navbar-light bg-light font-weight-bold" id="nav">
         <a href="#" class="navbar-brand">
@@ -112,42 +79,28 @@
         </div>
     </nav>
     <!-- Navbar End -->
-
-    <!-- Enquiry Buttons Start -->
-    <div class="enquiry">
-        <div class="container">
+    <!-- Login Form Start -->
+    <div class="container bg-light my-5 p-2" style="border-radius: 16px;">
         <div class="row">
-                <div class="col-12">
-                    <div class="card-box" style="overflow-x: auto; ">
-                        <table class="styled-table" style="width: 100%;">
-                            <tbody>
-                                <tr>
-                                    <td>View Queries</td>
-                                    <td><a href="contact-forms.php" class="btn btn-primary" style="border-radius: 16px;">View</a></td>
-                                </tr>
-                                <tr>
-                                    <td>View Employee Details</td>
-                                    <td><a href="employee.php" class="btn btn-primary" style="border-radius: 16px;">View</a></td>
-                                </tr>
-                                <tr>
-                                    <td>View Customer Details</td>
-                                    <td><a href="customer-details.php" class="btn btn-primary" style="border-radius: 16px;">View</a></td>
-                                </tr>
-                                <tr>
-                                    <td>View Product Queries</td>
-                                    <td><a href="product-query.php" class="btn btn-primary" style="border-radius: 16px;">View</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="text-center">
-                            <a href="login.php" class="btn btn-primary">Log Out!</a>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end row -->
+            <div class="col-12 col-md-7">
+                <img src="../images/login.jpg" style="border-radius: 16px; width: 100%;" alt="login">
+            </div>
+            <div class="col-12 col-md-5 my-auto">
+                <h2 class="text-center"><span style="color: #E91E63;">Customer Login</span> Form</h2>
+                <form action="" method="POST">
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
+                    <label for="password">password:</label><br>
+                    <input type="password" name="password" id="password" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
+                    <br><br>
+
+                    <button class="btn btn-primary w-100" name="login">Login</button><br><br>
+                </form>
+                <p class="text-center">Don't have an account? <span><a href="customer-signup.php">Sign Up!</a></span></p>
+            </div>
         </div>
     </div>
-    <!-- Enquiry Buttons End -->
+    <!-- Login Form End -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -157,27 +110,37 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-    <!-- vanilla-tilt.js -->
-    <script type="text/javascript" src="JS/vanilla-tilt.min.js"></script>
-    <!-- observer.js -->
-    <script src="JS/observer.js"></script>
-    <script>
-        var preloader = document.getElementById("loading");
-
-        function myFunction() {
-            preloader.style.display = 'none';
-        };
-
-        const btnScrollToTop = document.querySelector("#btnScrollToTop");
-
-        btnScrollToTop.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: "smooth"
-            });
-        });
-    </script>
 </body>
 
 </html>
+
+<?php
+include("connection.php");
+
+if (isset($_POST['login'])) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $query = "SELECT * FROM `customer_list` WHERE email='$email' AND password='$password'";
+
+    $result = mysqli_query($con, $query);
+
+    $num = mysqli_num_rows($result);
+
+    if ($num == 1) {
+?>
+        <script>
+            alert('Successfully Logged In');
+            window.location.href = "product-info.php";
+        </script>
+    <?php
+    } else {
+    ?>
+        <script>
+            alert('Invalid Employee ID/ Email/ Password');
+            window.location.href = "customer-login.php";
+        </script>
+<?php
+    }
+}
+?>

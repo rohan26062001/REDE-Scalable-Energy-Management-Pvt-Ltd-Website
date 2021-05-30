@@ -9,8 +9,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/Rede-Logo.jpg" type="image/x-icon">
-    <title>User Login</title>
+    <link rel="icon" href="../images/Rede-Logo.jpg" type="image/x-icon">
+    <title>Employee Login | REDE Scalable Energy Management Pvt. Ltd.</title>
 
     <!-- Font Style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,7 +27,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- External Stylesheets -->
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/main.css" />
 </head>
 
 <style>
@@ -57,15 +58,15 @@
                     <a class="nav-link" href="../our-products.html">Our Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Services</a>
+                    <a class="nav-link" href="../services.html">Services</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Login/Sign-up
+                        Login
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="login.php">Login</a>
-                        <a class="dropdown-item" href="signup.php">Sign Up</a>
+                        <a class="dropdown-item" href="login.php">Employee Login</a>
+                        <a class="dropdown-item" href="customer-login.php">Customer Login</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -85,7 +86,7 @@
                 <img src="../images/login.jpg" style="border-radius: 16px; width: 100%;" alt="login">
             </div>
             <div class="col-12 col-md-5 my-auto">
-                <h2 class="text-center"><span style="color: #E91E63;">Login</span> Form</h2>
+                <h2 class="text-center"><span style="color: #E91E63;">Employee Login</span> Form</h2>
                 <form action="validation.php" method="POST">
                     <label for="emp_id">Employee Id:</label><br>
                     <input type="text" name="id" id="emp_id" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
