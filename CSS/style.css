@@ -8,7 +8,7 @@ html{
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #fff url('images/Eclipse-1s-200px.gif') no-repeat center;
+  background: #fff url('../images/Eclipse-1s-200px.gif') no-repeat center;
   z-index: 50;
 
 }

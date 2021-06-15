@@ -19,8 +19,7 @@
 
     <!-- BS4 -->
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/main.css" />
@@ -84,8 +83,7 @@
             <img src="images/Rede-Logo.jpg" width="45" alt="" class="d-inline-block align-middle mr-2">
             <span><span style="color: #E91E63;">REDE</span> SCALABLE</span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -94,19 +92,17 @@
                     <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="our-products.html">Our Products</a>
+                    <a class="nav-link" href="our-products.php">Our Products</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Login
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="PHP/login.php">Employee Login</a>
-                        <a class="dropdown-item" href="PHP/customer-login.php">Customer Login</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -140,7 +136,7 @@
                             IEC60870-5-101/103/104,
                             DNP3, DLMS, OPC UA/
                             DA, MQTT</p>
-                        
+
                     </div>
                     <div class="col-md-4 col-12 bg-light text-center py-2" style="border-radius: 16px;">
                         <img src="images/products/Feeder Remote Terminal Unit.jpeg" alt="Feeder Remote Terminal Unit">
@@ -149,7 +145,7 @@
                             Unit for RMU, CSS,
                             Tripping Controller, EFPI
                             Management.</p>
-                        
+
                     </div>
                     <div class="col-md-4 col-12 bg-light text-center py-2" style="border-radius: 16px;">
                         <img src="images/products/Remote Terminal Unit.jpeg" alt="Remote Terminal Unit">
@@ -159,7 +155,7 @@
                             Hotswappable IOs,
                             IEC60870-5-101/103/104,
                             DNP3, DLMS, etc</p>
-                        
+
                     </div>
                 </div>
                 <div class="row my-2">
@@ -168,14 +164,14 @@
                         <h4>Automatic Weather Station</h4>
                         <p>Sensors, Data Logger,
                             Tripod, Web Based HMI</p>
-                        
+
                     </div>
                     <div class="col-md-4 col-12 bg-light text-center py-2" style="border-radius: 16px;">
                         <img src="images/products/Industrial Modem and Routers.jpeg" alt="Industrial Modem and Routers">
                         <h4>Industrial Modem and Routers</h4>
                         <p>2G/3G/4G LTE, MQTT,
                             VPN, Modbus, LoRa</p>
-                        
+
                     </div>
                     <div class="col-md-4 col-12 bg-light text-center py-2" style="border-radius: 16px;">
                         <img src="images/products/Industrial Ethernet Switches.jpeg" alt="Industrial Ethernet Switches">
@@ -183,7 +179,7 @@
                             Switches</h4>
                         <p>Unmanaged, Managed,
                             IEC61850-3 Compliant</p>
-                        
+
                     </div>
                 </div>
                 <div class="row my-2">
@@ -194,7 +190,7 @@
                             SLD, Alarms, Events,
                             Reports, Trends, User
                             management</p>
-                        
+
                     </div>
                     <div class="col-md-4 col-12 bg-light text-center py-2" style="border-radius: 16px;">
                         <img src="images/products/Cloud Based Application.jpeg" alt="Cloud Based Application">
@@ -203,7 +199,7 @@
                             Microsoft Azure, Amazon
                             Web Services, Restful API,
                             MQTT</p>
-                        
+
                     </div>
                     <div class="col-md-4 col-12 bg-light text-center py-2" style="border-radius: 16px;">
                         <img src="images/products/On Site and Online Support Services.jpeg" alt="On Site and Online Support Services">
@@ -213,11 +209,35 @@
                             commissioning, product
                             configuration, data
                             mapping</p>
-                        
+
                     </div>
                 </div>
             </div>
-            <h4 class="text-center"><span style="color: #E91E63;"><a href="PHP/customer-login.php">Login Here</a></span> to view product details</h4>
+            <!-- Login Form Start -->
+            <div class="container bg-light my-5 p-2" style="border-radius: 16px; box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0 0  0 2px rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);">
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <img src="images/signup.png" style="border-radius: 16px; width: 100%;" alt="signup">
+                    </div>
+                    <div class="col-12 col-md-5 my-auto">
+                        <h2 class="text-center"><span style="color: #E91E63;">Just Fill This</span> Form To View More Products</h2>
+                        <form action="" method="POST">
+                            <label for="name">Name:</label><br>
+                            <input type="text" name="name" id="name" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" name="email" id="email" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
+                            <label for="phone">Phone:</label><br>
+                            <input type="text" name="phone" id="phone" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
+                            <label for="company">Company Name:</label><br>
+                            <input type="text" name="company" id="company" style="width: 100%; border-color:#E91E63; border-radius: 15px;" required><br>
+                            <br><br>
+
+                            <button class="btn btn-primary w-100" name="signup">View More Products</button><br><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Login Form End -->
         </div>
     </section>
     <!-- Product Section End -->
@@ -296,7 +316,8 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             PUNE Office
                         </h6>
-                        <p><i class="fas fa-home me-3"></i> Office No. 140, Bizzbay mall, Opp. SBI Bank, NIBM-Undri Road, Kondhwa, Pune – 411048</p>
+                        <p><i class="fas fa-home me-3"></i> Office No. 140, Bizzbay mall, Opp. SBI Bank, NIBM-Undri
+                            Road, Kondhwa, Pune – 411048</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
                             <a href="mailto:sales@redescalable.com">sales@redescalable.com</a>
@@ -320,15 +341,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
@@ -345,7 +360,7 @@
 
         const btnScrollToTop = document.querySelector("#btnScrollToTop");
 
-        btnScrollToTop.addEventListener('click', function () {
+        btnScrollToTop.addEventListener('click', function() {
             window.scrollTo({
                 top: 0,
                 left: 0,
@@ -362,8 +377,16 @@
             }
         });
 
-        tl.from(".gsap", { x: 200, opacity: 0, duration: 1.5 })
-            .from(".content", { y: 300, opacity: 0, duration: 1 }, "-=1")
+        tl.from(".gsap", {
+                x: 200,
+                opacity: 0,
+                duration: 1.5
+            })
+            .from(".content", {
+                y: 300,
+                opacity: 0,
+                duration: 1
+            }, "-=1")
 
         VanillaTilt.init(document.querySelectorAll(".card-edit"), {
             max: 25,
@@ -375,3 +398,65 @@
 </body>
 
 </html>
+
+<?php
+include("PHP/connection.php");
+
+if (isset($_POST['signup'])) {
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $company = $_POST['company'];
+    date_default_timezone_set('Asia/Calcutta');
+    $dated = date("Y-m-d H:i:s");
+    $query = "SELECT * FROM `customer_list` WHERE email='$email'";
+
+    $result = mysqli_query($con, $query);
+
+    $num = mysqli_num_rows($result);
+
+    if($num == 0){
+        $sql = "INSERT INTO `customer_list`(`name`, `email`, `phone`, `company`, `date`) VALUES ('$name', '$email', '$phone', '$company', '$dated')";
+        $result = mysqli_query($con, $sql);
+        if($result){
+            ?>
+            <script>
+                alert("Thanks for visiting");
+                window.location.href="PHP/product-info.php";
+            </script>
+            <?php
+            exit();
+        }
+        else{
+            ?>
+            <script>
+                alert("Oops, it seems an error occured");
+            </script>
+            <?php
+            exit();
+        }
+    }
+    else{
+        $sql = "UPDATE `customer_list` SET `date`='$dated' WHERE `email`='$email'";
+        $result = mysqli_query($con, $sql);
+        if($result){
+            ?>
+            <script>
+                alert("Thanks for revisiting");
+                window.location.href="PHP/product-info.php";
+            </script>
+            <?php
+            exit();
+        }
+        else{
+            ?>
+            <script>
+                alert("Oops, it seems an error occured");
+            </script>
+            <?php
+            exit();
+        }
+    }
+}
+?>

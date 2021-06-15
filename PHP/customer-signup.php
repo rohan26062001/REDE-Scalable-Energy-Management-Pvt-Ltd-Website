@@ -50,7 +50,7 @@
                     <a class="nav-link" href="../index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../our-products.html">Our Products</a>
+                    <a class="nav-link" href="../our-products.php">Our Products</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../services.html">Services</a>
@@ -61,7 +61,6 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="login.php">Employee Login</a>
-                        <a class="dropdown-item" href="customer-login.php">Customer Login</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -120,50 +119,3 @@
 
 </html>
 
-<?php
-include("connection.php");
-
-if (isset($_POST['signup'])) {
-
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $date = $_POST['date'];
-    $password = $_POST['password'];
-    $view = '';
-
-    $query = "SELECT * FROM `customer_list` WHERE email='$email'";
-
-    $result = mysqli_query($con, $query);
-
-    $num = mysqli_num_rows($result);
-
-    if ($num == 1) {
-?>
-        <script>
-            alert("Account already exist.");
-        </script>
-        <?php
-    } else {
-        $sql = "INSERT INTO `customer_list`(`name`, `email`, `user_creation_date`, `password`, `viewed_products`) VALUES ('$name','$email','$date','$password','$view')";
-
-        $result = mysqli_query($con, $sql);
-
-        if ($result) {
-        ?>
-            <script>
-                alert("Successfully Signed Up");
-                window.location.href = "customer-login.php";
-            </script>
-        <?php
-            exit();
-        } else {
-        ?>
-            <script>
-                alert("Failed to Sign Up");
-            </script>
-<?php
-            exit();
-        }
-    }
-}
-?>

@@ -58,7 +58,7 @@
                     <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="our-products.html">Our Products</a>
+                    <a class="nav-link" href="our-products.php">Our Products</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="services.html">Services</a>
@@ -70,7 +70,6 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="PHP/login.php">Employee Login</a>
-                        <a class="dropdown-item" href="PHP/customer-login.php">Customer Login</a>
                     </div>
                 </li>
                 <li class="nav-item">

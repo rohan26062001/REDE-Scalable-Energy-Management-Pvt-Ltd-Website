@@ -93,9 +93,9 @@
                         <tr>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Account Creation Date</th>
-                            <th>Password</th>
-                            <th>Viewed Products</th>
+                            <th>Phone</th>
+                            <th>Company Name</th>
+                            <th>Last Visited On</th>
                         </tr>
                     </thead>
 
@@ -105,9 +105,9 @@
                         <tr>
                             <td><?php echo $rows['name']; ?></td>
                             <td><?php echo $rows['email']; ?></td>
-                            <td><?php echo $rows['user_creation_date']; ?></td>
-                            <td><?php echo $rows['password']; ?></td>
-                            <td><?php echo $rows['viewed_products']; ?></td>
+                            <td><?php echo $rows['phone']; ?></td>
+                            <td><?php echo $rows['company']; ?></td>
+                            <td><?php echo $rows['date']; ?></td>
                         </tr>
                     <?php
                     }
